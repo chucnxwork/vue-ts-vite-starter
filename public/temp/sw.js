@@ -1,6 +1,8 @@
 const CACHE_NAME = 'hello-pwa-cache-v1';
 const urlsToCache = [
-  'index.html'
+  'index.html',
+  'script.js',
+  'styles.css'
   // Add paths to icons if you want them cached immediately
   // '/home/user/hello-pwa/icons/icon-192x192.png',
   // '/home/user/hello-pwa/icons/icon-512x512.png'

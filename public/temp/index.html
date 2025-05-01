@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Keep Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="logo">Keep Clone</div>
+      <div class="search-bar">
+        <input type="search" id="search-input" placeholder="Search notes..." />
+      </div>
+    </header>
+
+    <div class="app-container">
+      <aside class="nav-sidebar">
+        <ul>
+          <li><a href="#" class="active">Notes</a></li>
+          <li><a href="#">Reminders</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Trash</a></li>
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        <div class="note-creator">
+          <input type="text" id="note-title-input" placeholder="Title" />
+          <textarea
+            id="note-content-input"
+            placeholder="Take a note..."
+            rows="3"
+          ></textarea>
+          <button id="add-note-btn">Add Note</button>
+        </div>
+
+        <div id="notes-container" class="notes-grid">
+          <!-- Notes will be dynamically added here -->
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
